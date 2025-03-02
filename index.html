@@ -1,9 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My Personal Website</title>
-      </head>
-      <body>
-        <h1>Hello World!</h1>
-      </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/logo/logoipsum-221.svg">
+  <!-- GitHub Calendar CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Website</h1>
+      <p>Hi, I'm David Amedi! I love building cool things with code.</p>
+      <button id="cta-button">Explore My Work</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate developer with experience in HTML, CSS, and JavaScript. I enjoy solving problems and creating user-friendly interfaces.</p>
+    <img src="assets/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" alt="Profile Picture" class="profile-img">
+  </section>
+
+  <section id="languages" class="languages">
+    <h2>Languages & Tech Stack</h2>
+    <div class="language-list">
+      <div class="language-card">
+        <img src="assets/icons/icons8-html-5-48.png" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="language-card">
+        <img src="assets/icons/icons8-css3-48.png" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="language-card">
+        <img src="assets/icons/icons8-javascript-50.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="language-card">
+        <img src="assets/icons/icons8-github-50.png" alt="Git">
+        <p>GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>E-Commerce Website</h3>
+        <p>A fully responsive e-commerce website built with HTML, CSS, and JavaScript. Features include a product catalog, shopping cart, and checkout system.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio website showcasing my skills, projects, and contact information. Built with a modern design and dark mode support.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A weather application that fetches real-time weather data using an API. Built with JavaScript and styled with CSS.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Contributions Section -->
+  <section id="github" class="github">
+    <h2>GitHub Contributions</h2>
+    <div id="github-contributions">
+      <!-- GitHub Calendar will be rendered here -->
+      <div class="calendar">
+        Loading GitHub contributions...
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 David Amedi. All rights reserved.</p>
+  </footer>
+
+  <!-- GitHub Calendar Script -->
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
