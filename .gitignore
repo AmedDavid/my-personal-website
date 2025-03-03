@@ -1,5 +1,5 @@
 # Ignore the assets folder
-assets/
+# assets/
 
 .env
 # Ignore node_modules folder
