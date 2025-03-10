@@ -1,0 +1,303 @@
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: var(--navbar-color);
+        padding: 5rem 2rem 2rem;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+        padding: 0.75rem 1.5rem;
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .modal-content {
+        width: 95%;
+        max-height: 70vh;
+    }
+
+    .about {
+        padding: 3rem 1.5rem;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .featured-project h2 {
+        font-size: 2rem;
+    }
+
+    .contact {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .bio {
+        font-size: 1.1rem;
+    }
+
+    .about-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-section ul li {
+        font-size: 1rem;
+    }
+
+    .projects {
+        padding: 6rem 1.5rem 3rem;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        margin: 0.25rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .stat-item h4 {
+        font-size: 2rem;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        text-align: left;
+        padding-left: 3rem;
+    }
+
+    .timeline-item::before {
+        left: 6px !important;
+        right: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .nav-links {
+        width: 200px;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    .modal-body h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-body p {
+        font-size: 1rem;
+    }
+
+    .about {
+        padding: 2rem 1rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .info-item p {
+        font-size: 0.9rem;
+    }
+
+    .social-links h3 {
+        font-size: 1.3rem;
+    }
+
+    .badge {
+        font-size: 0.9rem;
+    }
+
+    .bio {
+        font-size: 1rem;
+    }
+
+    .about-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .skill-item {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .featured-project h2 {
+        font-size: 1.8rem;
+    }
+
+    /* New styles for Projects page */
+    .projects {
+        padding: 5rem 1rem 2rem;
+    }
+
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-btn {
+        font-size: 0.9rem;
+    }
+
+    .stat-item {
+        padding: 1.5rem;
+    }
+
+    .stat-item h4 {
+        font-size: 1.8rem;
+    }
+
+    .timeline-item h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Other styles unchanged */
+    .profile-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skill-item {
+        padding: 0.75rem;
+    }
+
+    .skill-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Other styles unchanged */
+    .profile-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skill-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill-item span {
+        font-size: 0.9rem;
+    }
+}

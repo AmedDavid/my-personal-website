@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="assets/logo/logoipsum-221.svg">
-  <!-- GitHub Calendar CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Amedi - Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#languages">Languages</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#github">GitHub</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="theme-toggle">🌙</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">David Amedi</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="open">☰</span>
+            <span class="close">✕</span>
+        </div>
     </nav>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Welcome to My Website</h1>
-      <p>Hi, I'm David Amedi! I love building cool things with code.</p>
-      <button id="cta-button">Explore My Work</button>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 id="hero-title"></h1>
+            <p>Freelance Web Developer & Software Engineer | Nature Enthusiast</p>
+            <a href="pages/projects.html" class="btn">Explore My Work</a>
+        </div>
+    </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I'm a passionate developer with experience in HTML, CSS, and JavaScript. I enjoy solving problems and creating user-friendly interfaces.</p>
-    <img src="assets/images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" alt="Profile Picture" class="profile-img">
-  </section>
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="../assets/icons/icons8-python-94.png" alt="Python" class="skill-icon">
+                <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/javascript-js.svg" alt="JavaScript" class="skill-icon">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/react.svg" alt="React" class="skill-icon">
+                <span>React</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/next-js.svg" alt="Next.js" class="skill-icon">
+                <span>Next.js</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/php.svg" alt="PHP" class="skill-icon">
+                <span>PHP</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/laravel.svg" alt="Laravel" class="skill-icon">
+                <span>Laravel</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/django.svg" alt="Django" class="skill-icon">
+                <span>Django</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/tailwind-css.svg" alt="Tailwind CSS" class="skill-icon">
+                <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-item">
+                <img src="../assets/icons/cplusplus.svg" alt="C/C++" class="skill-icon">
+                <span>C/C++</span>
+            </div>
+        </div>
+    </section>
 
-  <section id="languages" class="languages">
-    <h2>Languages & Tech Stack</h2>
-    <div class="language-list">
-      <div class="language-card">
-        <img src="assets/icons/icons8-html-5-48.png" alt="HTML5">
-        <p>HTML5</p>
-      </div>
-      <div class="language-card">
-        <img src="assets/icons/icons8-css3-48.png" alt="CSS3">
-        <p>CSS3</p>
-      </div>
-      <div class="language-card">
-        <img src="assets/icons/icons8-javascript-50.png" alt="JavaScript">
-        <p>JavaScript</p>
-      </div>
-      <div class="language-card">
-        <img src="assets/icons/icons8-github-50.png" alt="Git">
-        <p>GitHub</p>
-      </div>
-    </div>
-  </section>
+    <!-- Featured Project Section -->
+    <section class="featured-project">
+        <h2>Featured Project</h2>
+        <div class="project-teaser">
+            <img src="assets/images/project1.jpg" alt="Featured Project">
+            <h3>Scalable Web Application</h3>
+            <p>A modern web app built with React and Next.js, designed for performance and scalability.</p>
+            <a href="pages/projects.html" class="btn">See More Projects</a>
+        </div>
+    </section>
 
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>E-Commerce Website</h3>
-        <p>A fully responsive e-commerce website built with HTML, CSS, and JavaScript. Features include a product catalog, shopping cart, and checkout system.</p>
-        <a href="#" class="project-link">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A personal portfolio website showcasing my skills, projects, and contact information. Built with a modern design and dark mode support.</p>
-        <a href="#" class="project-link">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Weather App</h3>
-        <p>A weather application that fetches real-time weather data using an API. Built with JavaScript and styled with CSS.</p>
-        <a href="#" class="project-link">View Project</a>
-      </div>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Me</h3>
+                <p>Hi, I’m David Amedi, a passionate web developer and software engineer with a love for nature and photography. I build scalable, modern solutions tailored to your needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ameditechwizard/" target="_blank" style="background-image: url('assets/icons/linkedin.svg');"></a>
+                    <a href="mailto:amukoahdavid@gmail.com" target="_blank" style="background-image: url('assets/icons/email.svg');"></a>
+                    <a href="https://github.com/AmedDavid" target="_blank" style="background-image: url('assets/icons/github.svg');"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 David Amedi. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <!-- GitHub Contributions Section -->
-  <section id="github" class="github">
-    <h2>GitHub Contributions</h2>
-    <div id="github-contributions">
-      <!-- GitHub Calendar will be rendered here -->
-      <div class="calendar">
-        Loading GitHub contributions...
-      </div>
-    </div>
-  </section>
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">↑</div>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 David Amedi. All rights reserved.</p>
-  </footer>
-
-  <!-- GitHub Calendar Script -->
-  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-  <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

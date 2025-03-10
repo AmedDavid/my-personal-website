@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - David Amedi</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">David Amedi</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="open">☰</span>
+            <span class="close">✕</span>
+        </div>
+    </nav>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="estate">Real Estate</button>
+            <button class="filter-btn" data-filter="events">Events Management</button>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card" data-project="project1" data-category="web">
+                <img src="../assets/images/project1.jpg" alt="Scalable Web App">
+                <h3>Scalable Web App</h3>
+                <p>Built with React and Next.js</p>
+            </div>
+            <div class="project-card" data-project="project2" data-category="estate">
+                <img src="../assets/images/favorofblessings.png" alt="Favor Of Blessings">
+                <h3>Favor Of Blessings</h3>
+                <p>Developed using HTML, CSS, Javascript and Laravel</p>
+            </div>
+            <div class="project-card" data-project="project3" data-category="events">
+                <img src="../assets/images/concart.png" alt="ConcArt">
+                <h3>ConcArt</h3>
+                <p>Designed with HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+
+        <!-- Project Stats -->
+        <div class="stats-section">
+            <h3>Project Highlights</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>50+</h4>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h4>5</h4>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h4>100K+</h4>
+                    <p>Lines of Code Written</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Timeline -->
+        <div class="timeline-section">
+            <h3>Project Journey</h3>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <h4>First Project (2022)</h4>
+                    <p>Started my journey with a simple portfolio site using HTML and CSS.</p>
+                </li>
+                <li class="timeline-item">
+                    <h4>CollegeCircle (2023)</h4>
+                    <p>Student social networking platform for college students.</p>
+                </li>
+                <li class="timeline-item">
+                    <h4>Real Estate System (2024)</h4>
+                    <p>Launched "Favor Of Blessings," my first major e-commerce project.</p>
+                </li>
+                <li class="timeline-item">
+                    <h4>ConcArt (2025)</h4>
+                    <p>Developed a full-stack event management platform with real-time features.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Me</h3>
+                <p>Hi, I’m David Amedi, a passionate web developer and software engineer with a love for nature and photography. I build scalable, modern solutions tailored to your needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ameditechwizard/" target="_blank" style="background-image: url('../assets/icons/linkedin.svg');"></a>
+                    <a href="mailto:amukoahdavid@gmail.com" target="_blank" style="background-image: url('../assets/icons/email.svg');"></a>
+                    <a href="https://github.com/AmedDavid" target="_blank" style="background-image: url('../assets/icons/github.svg');"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 David Amedi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
